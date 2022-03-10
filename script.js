@@ -490,7 +490,7 @@ function startMove() {
     field.addEventListener("mousemove", platformMoving);
     field.addEventListener("mouseout", platformMovingToEnd);
 
-    setTimeout(easyMoveUpLeft, 0);
+    setTimeout(easyMoveUpRight, 0);
 }
 
 function easyMoveUpLeft () {
@@ -535,7 +535,7 @@ function easyMoveUpLeft () {
             return setTimeout(easyMoveDownLeft, 0);
         }
 
-        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX === (recCoords.x + 52)) {
+        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX > (recCoords.x + 46) && ballCoordX <= (recCoords.x + 52)) {
             
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -621,7 +621,7 @@ function easyMoveUpRight() {
             return setTimeout(easyMoveDownRight, 0);
         }
 
-        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX === (recCoords.x - 17)) {
+        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX >= (recCoords.x - 17) && ballCoordX < (recCoords.x - 11)) {
             
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -707,7 +707,7 @@ function mediumMoveUpLeft() {
             return setTimeout(mediumMoveDownLeft, 0);
         }
 
-        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX === (recCoords.x + 52)) {
+        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX > (recCoords.x + 46) && ballCoordX <= (recCoords.x + 52)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -793,7 +793,7 @@ function mediumMoveUpRight() {
             return setTimeout(mediumMoveDownRight, 0);
         }
 
-        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX === (recCoords.x -17)) {
+        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX >= (recCoords.x - 17) && ballCoordX < (recCoords.x - 11)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -879,7 +879,7 @@ function hardMoveUpLeft() {
             return setTimeout(hardMoveDownLeft, 0);
         }
 
-        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX === (recCoords.x + 52)) {
+        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX > (recCoords.x + 46) && ballCoordX <= (recCoords.x + 52)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -965,7 +965,7 @@ function hardMoveUpRight() {
             return setTimeout(hardMoveDownRight, 0);
         }
 
-        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX === (recCoords.x -17)) {
+        if (ballCoordY < (recCoords.y + 40) && ballCoordY > (recCoords.y - 17) && ballCoordX >= (recCoords.x - 17) && ballCoordX < (recCoords.x - 11)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -1051,7 +1051,7 @@ function easyMoveDownLeft() {
             return setTimeout(easyMoveUpLeft, 0);
         }
 
-        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX === (recCoords.x + 52)) {
+        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX > (recCoords.x + 46) && ballCoordX <= (recCoords.x + 52)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -1137,7 +1137,7 @@ function easyMoveDownRight() {
             return setTimeout(easyMoveUpRight, 0);
         }
 
-        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX === (recCoords.x - 17)) {
+        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX >= (recCoords.x - 17) && ballCoordX < (recCoords.x - 11)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -1223,7 +1223,7 @@ function mediumMoveDownLeft() {
             return setTimeout(mediumMoveUpLeft, 0);
         }
 
-        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX === (recCoords.x + 52)) {
+        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX > (recCoords.x + 46) && ballCoordX <= (recCoords.x + 52)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -1309,7 +1309,7 @@ function mediumMoveDownRight() {
             return setTimeout(mediumMoveUpRight, 0);
         }
 
-        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX === (recCoords.x - 17)) {
+        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX >= (recCoords.x - 17) && ballCoordX < (recCoords.x - 11)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -1395,7 +1395,7 @@ function hardMoveDownLeft() {
             return setTimeout(hardMoveUpLeft, 0);
         }
 
-        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX === (recCoords.x + 52)) {
+        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX > (recCoords.x + 46) && ballCoordX <= (recCoords.x + 52)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
@@ -1481,7 +1481,7 @@ function hardMoveDownRight() {
             return setTimeout(hardMoveUpRight, 0);
         }
 
-        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX === (recCoords.x - 17)) {
+        if (ballCoordY > (recCoords.y - 17) && ballCoordY < (recCoords.y + 40) && ballCoordX >= (recCoords.x - 17) && ballCoordX < (recCoords.x - 11)) {
               
             if (rec.classList.contains("redRectangle")) {
                 rec.classList.remove("redRectangle");
